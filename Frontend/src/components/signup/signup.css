@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+body{
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.images{
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin-top: 9rem;
+  background-color: black;
+  margin-right: 2rem;
+}
+.login-content{
+  border: 2px solid wheat;
+  height: 38rem;
+  width: 60rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 10px 10px 15px #A77EF8;
+}
+.text{
+  font-size: 48px;
+  color: white;
+  font-weight: 1000;
+  margin: 10% 0 4% 10%;
+}
+.form{
+  width: 100%;
+}
+input{
+  background: transparent;
+  margin: 2rem 0 0 5rem;
+  border: none;
+  height:  40px;
+  outline: none;
+  color: white;
+  border-bottom: 1px solid white;
+  width: 60%;
+  font-size: 20px;
+}
+input::placeholder{
+  font-size: 12px;
+  color: white;
+}
+.btn{
+  margin: 2rem 0 0 5rem;
+  height: 45px;
+  width: 60%;
+  border: none;
+  color: white;
+  cursor: pointer;background-color: #A77EF8;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.wel{
+  margin: 4rem 0 1rem 5rem;
+  color:white;
+  font-size: 48px;
+  color: white;
+  font-weight: 1000;
+}
+
+input[type="file"]{
+color: #A77EF8;
+}
+.bt{
+    margin: 30px 0 0 0;
+}
+.bt p{
+  color: white;
+  margin: 20px 0 0 0;
+}
+.bt span{
+  color: #A77EF8;
+  text-decoration: underline;
+  font-size: 18px;
+  cursor: pointer;
+}
+.imags{
+display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .login-content{
+    width: 700px;
+    height: 600px;
+  }
+  input,.btn{
+    margin-left: 3rem;
+    width: 70%;
+  }
+  .bt p{
+    text-align: center;
+    margin-right: 10%;
+  }
+  .wel{
+    font-size: 40px;
+    margin-left: 2.5rem;
+  }
+}
+@media only screen and (max-width: 767px){
+  .login-content{
+border: 2px solid wheat;
+      margin: 50% 0 20% 0;
+      flex-direction: column;
+    width: 350px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      box-shadow: 10px 10px 15px #A77EF8;
+    
+  }
+  .wel{
+    margin: 10px;
+    font-size: 38px;
+    text-align: center;
+  }
+  .imags{
+    display: block;
+    border: 2px solid white;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  margin-left: 25%;
+  }
+  .images{
+    display: none;
+  }
+  input,.btn{
+    width: 80%;
+    margin: 30px 0 0 30px;
+  }
+  .bt p{
+    text-align: center;
+    margin: 0;
+  }
+}
